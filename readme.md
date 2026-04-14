@@ -14,21 +14,21 @@ Website for a tech conference, created for the Web Design course. Contains 4 HTM
 - `styles.css` - CSS styles
 
 ## Requirements Implemented
-- ✅ Semantic structure (header, nav, main, footer)
-- ✅ One h1 per page
-- ✅ Consistent navigation across pages
-- ✅ Skip link for accessibility
-- ✅ Table with thead, tbody, tfoot and 6 rows
-- ✅ Form with 10+ controls and labels
-- ✅ Fieldset, legend, required
-- ✅ External CSS and responsive design
-- ✅ HTML and CSS validation passed
+- Semantic structure (header, nav, main, footer)
+- One h1 per page
+- Consistent navigation across pages
+- Skip link for accessibility
+- Table with thead, tbody, tfoot and 6 rows
+- Form with 10+ controls and labels
+- Fieldset, legend, required
+- External CSS and responsive design
+- HTML and CSS validation passed
 
 ## Live
-https://username.github.io/tech-event-site/
+https://alexandruudrea06.github.io/techevents/
 
 ## Author
-[Name] - Web Design Course
+Udrea Alexandru Andrei- Web Design Course
 
 ## Limitations
 - Static countdown
