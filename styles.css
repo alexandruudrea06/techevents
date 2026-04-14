@@ -281,7 +281,6 @@ legend {
     gap: 15px;
     justify-content: center;
 }
-
 /* Footer */
 footer {
     background: #333;
@@ -290,21 +289,3 @@ footer {
     padding: 25px;
 }
 footer a { color: #f59e0b; }
-
-/* Mobile */
-@media (max-width: 768px) {
-    .stats-grid { grid-template-columns: repeat(2, 1fr); }
-    .cta-buttons { flex-direction: column; }
-    .form-actions { flex-direction: column; }
-    nav ul { gap: 10px; }
-}
-@media (max-width: 480px) {
-    .stats-grid { grid-template-columns: 1fr; }
-    .countdown-number { font-size: 1.5rem; padding: 10px; }
-}
-
-/* Accesibilitate */
-*:focus-visible {
-    outline: 3px solid #f59e0b;
-    outline-offset: 2px;
-}
