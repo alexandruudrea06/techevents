@@ -1,0 +1,310 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    color: #333;
+    background: #f5f5f5;
+}
+
+/* Skip link */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #7c3aed;
+    color: white;
+    padding: 8px 16px;
+}
+.skip-link:focus { top: 0; }
+
+/* Header */
+header {
+    background: #7c3aed;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+}
+header h1 { font-size: 2.2rem; }
+
+/* Navigație */
+nav {
+    background: white;
+    padding: 15px;
+    border-bottom: 3px solid #7c3aed;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+nav a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 15px;
+}
+nav a:hover { color: #7c3aed; }
+nav a[aria-current="page"] {
+    background: #7c3aed;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Main */
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+h1 {
+    border-left: 5px solid #7c3aed;
+    padding-left: 15px;
+    margin-bottom: 25px;
+}
+h2 {
+    color: #7c3aed;
+    margin: 30px 0 15px;
+}
+section { margin-bottom: 40px; }
+
+/* Hero */
+.hero-event {
+    background: #7c3aed;
+    border-radius: 25px;
+    padding: 50px 30px;
+    text-align: center;
+    color: white;
+}
+.hero-event h2 { color: white; margin: 0 0 15px; }
+.countdown {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin: 30px 0;
+}
+.countdown-number {
+    display: block;
+    background: rgba(255,255,255,0.2);
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Butoane */
+.btn {
+    display: inline-block;
+    background: white;
+    color: #7c3aed;
+    padding: 12px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 5px;
+}
+
+.btn:hover { 
+    background: #cecece;
+    color: rgb(0, 0, 0);
+ }
+
+
+/* Grid și Carduri */
+.highlights-grid,
+.speakers-grid,
+.schedule-days {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+.highlight-card,
+.speaker-card,
+.schedule-day,
+.speaker-detailed,
+.venue-details,
+.payment-info,
+.stat-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+.schedule-day { border-top: 4px solid #7c3aed; }
+.schedule-day ul { list-style: none; }
+.schedule-day li {
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+
+/* Tabel */
+.table-wrapper {
+    overflow-x: auto;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+.archive-table {
+    width: 100%;
+    background: white;
+    border-collapse: collapse;
+    min-width: 900px;
+}
+.archive-table caption {
+    background: #7c3aed;
+    color: white;
+    padding: 12px;
+    font-weight: bold;
+    text-align: left;
+}
+.archive-table th {
+    background: #6d28d9;
+    color: white;
+    padding: 12px;
+    text-align: left;
+}
+.archive-table td {
+    padding: 12px;
+    border-bottom: 1px solid #ffffff;
+}
+.archive-table tbody tr:nth-child(even) { background: #ffffff; }
+.archive-table tfoot {
+    background: #7c3aed;
+    color: white;
+    font-weight: bold;
+}
+
+/* Formular */
+.registration-form-section {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+fieldset {
+    border: 2px solid #7c3aed;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+legend {
+    background: #7c3aed;
+    color: white;
+    padding: 5px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+.form-group { margin-bottom: 18px; }
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.required { color: #e74c3c; }
+.form-hint {
+    font-size: 0.85rem;
+    color: #666;
+    margin-top: 4px;
+}
+.radio-group,
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+.radio-group input,
+.checkbox-group input { width: auto; }
+.form-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 25px;
+}
+.submit-btn,
+.reset-btn {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.submit-btn {
+    background: #7c3aed;
+    color: white;
+}
+.reset-btn {
+    background: #e0e0e0;
+    color: #333;
+}
+
+/* Stats */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+.stat-card {
+    text-align: center;
+    border: 2px solid #7c3aed;
+}
+.stat-card h3 {
+    font-size: 2rem;
+    color: #7c3aed;
+}
+
+/* CTA */
+.cta-section {
+    background: #7c3aed;
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    color: white;
+}
+.cta-section h2 { color: white; }
+.cta-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+footer a { color: #f59e0b; }
+
+/* Mobile */
+@media (max-width: 768px) {
+    .stats-grid { grid-template-columns: repeat(2, 1fr); }
+    .cta-buttons { flex-direction: column; }
+    .form-actions { flex-direction: column; }
+    nav ul { gap: 10px; }
+}
+@media (max-width: 480px) {
+    .stats-grid { grid-template-columns: 1fr; }
+    .countdown-number { font-size: 1.5rem; padding: 10px; }
+}
+
+/* Accesibilitate */
+*:focus-visible {
+    outline: 3px solid #f59e0b;
+    outline-offset: 2px;
+}

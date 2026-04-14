@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register for TechConf 2026</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <header>
+        <h1>TechConf 2026</h1>
+        <p class="tagline">Where Innovation Meets Community</p>
+    </header>
+    
+    <nav aria-label="Main navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="archive.html">Event Archive</a></li>
+            <li><a href="register.html" aria-current="page">Register</a></li>
+        </ul>
+    </nav>
+    
+    <main id="main-content">
+        <h1>Register for TechConf 2026</h1>
+        
+        <section class="registration-intro">
+            <p>Secure your spot at the premier tech conference in Eastern Europe. Early bird pricing available until May 1, 2026.</p>
+        </section>
+        
+        <!-- Formular de Înscriere -->
+        <section class="registration-form-section">
+            <h2>Registration Form</h2>
+            
+            <form method="post" action="#" aria-label="Conference registration form" class="registration-form">
+                
+                <!-- Informații Personale -->
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    
+                    <div class="form-group">
+                        <label for="full-name">Full Name <span class="required">(required)</span></label>
+                        <input 
+                            type="text" 
+                            id="full-name" 
+                            name="full-name" 
+                            required 
+                            aria-required="true"
+                            autocomplete="name"
+                            placeholder="As it will appear on your badge"
+                        >
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address <span class="required">(required)</span></label>
+                        <input 
+                            type="email" 
+                            id="email" 
+                            name="email" 
+                            required 
+                            aria-required="true"
+                            autocomplete="email"
+                            placeholder="you@example.com"
+                            aria-describedby="email-note"
+                        >
+                        <p id="email-note" class="form-hint">We'll send your ticket and updates to this email</p>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone Number (optional)</label>
+                        <input 
+                            type="tel" 
+                            id="phone" 
+                            name="phone" 
+                            autocomplete="tel"
+                            placeholder="+40 123 456 789"
+                            pattern="[0-9\s\-\+\(\)]+"
+                            aria-describedby="phone-hint"
+                        >
+                        <p id="phone-hint" class="form-hint">For emergency contact during the event</p>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="company">Company / Organization</label>
+                        <input 
+                            type="text" 
+                            id="company" 
+                            name="company" 
+                            autocomplete="organization"
+                            placeholder="Where you work or study"
+                        >
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="job-title">Job Title</label>
+                        <input 
+                            type="text" 
+                            id="job-title" 
+                            name="job-title" 
+                            autocomplete="organization-title"
+                            placeholder="e.g., Software Developer, Student, Designer"
+                        >
+                    </div>
+                </fieldset>
+                
+                <!-- Tip Bilet -->
+                <fieldset>
+                    <legend>Ticket Selection</legend>
+                    
+                    <div class="form-group">
+                        <label for="ticket-type">Ticket Type <span class="required">(required)</span></label>
+                        <select id="ticket-type" name="ticket-type" required aria-required="true">
+                            <option value="">-- Select ticket type --</option>
+                            <option value="early-bird">Early Bird (€149) - Until May 1</option>
+                            <option value="regular">Regular (€249) - Until June 1</option>
+                            <option value="student">Student (€79) - Valid ID required</option>
+                            <option value="workshop">Workshop Pass (+€99) - Add-on to any ticket</option>
+                            <option value="virtual">Virtual Only (€49) - Livestream access</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="quantity">Number of Tickets <span class="required">(required)</span></label>
+                        <input 
+                            type="number" 
+                            id="quantity" 
+                            name="quantity" 
+                            min="1" 
+                            max="10" 
+                            value="1" 
+                            required
+                            aria-required="true"
+                        >
+                        <p class="form-hint">Maximum 10 tickets per registration</p>
+                    </div>
+                </fieldset>
+                
+                <!-- Preferințe -->
+                <fieldset>
+                    <legend>Session Preferences</legend>
+                    
+                    <p class="fieldset-description">Which tracks are you most interested in? (Select all that apply)</p>
+                    
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="track-ai" name="tracks" value="ai">
+                        <label for="track-ai">AI & Machine Learning</label>
+                    </div>
+                    
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="track-web" name="tracks" value="web">
+                        <label for="track-web">Web Development</label>
+                    </div>
+                    
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="track-cloud" name="tracks" value="cloud">
+                        <label for="track-cloud">Cloud Computing & DevOps</label>
+                    </div>
+                    
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="track-design" name="tracks" value="design">
+                        <label for="track-design">UI/UX Design</label>
+                    </div>
+                    
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="track-career" name="tracks" value="career">
+                        <label for="track-career">Career Development</label>
+                    </div>
+                </fieldset>
+                
+                <!-- Cum ai aflat -->
+                <fieldset>
+                    <legend>How did you hear about TechConf?</legend>
+                    
+                    <div class="radio-group">
+                        <input type="radio" id="hear-social" name="referral" value="social">
+                        <label for="hear-social">Social Media (LinkedIn, Twitter, Facebook)</label>
+                    </div>
+                    
+                    <div class="radio-group">
+                        <input type="radio" id="hear-email" name="referral" value="email">
+                        <label for="hear-email">Email Newsletter</label>
+                    </div>
+                    
+                    <div class="radio-group">
+                        <input type="radio" id="hear-friend" name="referral" value="friend">
+                        <label for="hear-friend">Friend or Colleague</label>
+                    </div>
+                    
+                    <div class="radio-group">
+                        <input type="radio" id="hear-search" name="referral" value="search">
+                        <label for="hear-search">Search Engine</label>
+                    </div>
+                    
+                    <div class="radio-group">
+                        <input type="radio" id="hear-other" name="referral" value="other">
+                        <label for="hear-other">Other</label>
+                    </div>
+                </fieldset>
+                
+                <!-- Cerințe Speciale -->
+                <fieldset>
+                    <legend>Additional Information</legend>
+                    
+                    <div class="form-group">
+                        <label for="dietary">Dietary Restrictions</label>
+                        <textarea 
+                            id="dietary" 
+                            name="dietary" 
+                            rows="2"
+                            placeholder="Vegetarian, vegan, allergies, etc."
+                            aria-describedby="dietary-hint"
+                        ></textarea>
+                        <p id="dietary-hint" class="form-hint">We'll do our best to accommodate your needs</p>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="accessibility">Accessibility Requirements</label>
+                        <textarea 
+                            id="accessibility" 
+                            name="accessibility" 
+                            rows="2"
+                            placeholder="Wheelchair access, sign language interpretation, etc."
+                        ></textarea>
+                    </div>
+                    
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+                        <label for="newsletter">I'd like to receive updates about future TechConf events</label>
+                    </div>
+                    
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="code-conduct" name="code-conduct" value="agreed" required>
+                        <label for="code-conduct">
+                            I agree to abide by the <a href="#">Code of Conduct</a> <span class="required">(required)</span>
+                        </label>
+                    </div>
+                </fieldset>
+                
+                <!-- Butoane -->
+                <div class="form-actions">
+                    <button type="submit" class="submit-btn">Complete Registration</button>
+                    <button type="reset" class="reset-btn">Clear Form</button>
+                </div>
+                
+                <p class="form-note">
+                    <span class="required">*</span> Required fields<br>
+                    By registering, you agree to our <a href="#">Terms and Conditions</a> and <a href="#">Privacy Policy</a>.
+                </p>
+            </form>
+        </section>
+        
+        <!-- Informații Plată -->
+        <section class="payment-info">
+            <h2>Payment Information</h2>
+            <p>After submitting this form, you'll be redirected to our secure payment processor. We accept:</p>
+            <ul class="payment-methods">
+                <li>💳 Credit/Debit Card (Visa, Mastercard)</li>
+                <li>🏦 Bank Transfer (invoice available upon request)</li>
+                <li>🎓 Student Discount (valid student ID required at check-in)</li>
+            </ul>
+            <p>For group registrations (5+ tickets) or invoice requests, please contact us directly at <a href="mailto:registrations@techconf2026.ro">registrations@techconf2026.ro</a>.</p>
+        </section>
+    </main>
+    
+    <footer>
+        <p>© 2026 TechConf Romania | Web Design Course Project | UVT</p>
+        <p>Contact: <a href="mailto:contact@techconf2026.ro">contact@techconf2026.ro</a></p>
+    </footer>
+</body>
+</html>
